@@ -11,7 +11,7 @@ WHY do i mess with php a bit? Its a challenge to make somewhat secure and reliab
 
 Make no mistake. Go and especially Rust are far superior to php. It seems like you are taking 2 steps forward with php because its easy to see an app in a browser... but in reality you are taking 10 steps back. If you started with go or rust you would start 10 steps ahead. You are not brilliant for trying to take the most easy shortcuts with php. It makes you feel brilliant, in control and powerful. Goooooood luck with that. Code running on production servers does not care about your feelings of accomplishment because you know how to run a php app. 
 
-SO-- if you want to mess with php, have some dam respect for the fact that you are fighting an uphill battle. Wise up, start using better practices, and focus on security. 
+SO-- if you want to mess with php, have some dam respect for the fact that you are fighting an uphill battle. Wise up, start using better practices, and focus on security. Complexity = vulns- keep your code simple and reliable.  Older versions of php code OR older versions of the php server itself BOTH introduce vulns. 
 
 # Elite modern apps-
 
