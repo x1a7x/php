@@ -13,7 +13,9 @@
 
 4) /adelia3  Quite incredible. Now there is an admin.php that is completely seperate from the app.   The admin.php can be renamed to anything or removed entirely and placed back on the server when you want admin features. you can delete or fully edit all the content of any post. Think about it.... this very tiny and simple php app can do everything vichan does.
 
-5) /Adelia4  top left has choice of 8 stylesheets- this board now has ALL the features that are standard on vichan lynxchan and so forth. 
+5) /Adelia4  top left has choice of 8 stylesheets- this board now has ALL the features that are standard on vichan lynxchan and so forth.
+
+6)  /Adelia5  to install run install.php. sets makes db and sets up WAL mode. 
    
 
 
