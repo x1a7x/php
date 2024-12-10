@@ -3,7 +3,7 @@
 
 I don't f/w php much due to its many vulnerabilities- its an uphill battle. Most new users know of 1 or 2 vulns, there are way more. In fact, at runtime unexpeted behavior happens that ai or pro devs do not predict or find. Php is what it is. So to mitigate some probs, make your codebase small for sure. Complexity = vulns in php and that is a fact. 
 
-All the imageboard apps here are at different stages of dev- but ALL of them are security focused and modern. Grab any version and do whatever you want with the code. Advanced Ai made all the apps here. Some are amazingly nice starting points for your own visions/changes. 
+All the imageboard apps here are at different stages of dev- but ALL of them are security focused and modern. Grab any version and do whatever you want with the code. Advanced Ai made all the apps here. Some are amazingly nice starting points for your own visions/changes. To maintain security, NO FRONT FACING ADMIN AREAS WILL BE INCLUDED IN THE MAIN CODE. It is incredibly easy to feed the code to AI and make seperate moderation apps, depending on what db the app has. Hey, it's PHP- having a front facing admin area built into any app is WAY less secure. 
 
 # Elite modern apps-
 
