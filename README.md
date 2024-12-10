@@ -21,4 +21,4 @@ SO-- if you want to mess with php, have some dam respect for the fact that you a
 
 2) /Adelia1 Pagination for main board added to /Adelia. This has to be the most features and security fit into a small tiny imageboard app, for real. This board is so nice and full featured that i will make a postgres version too in a while. I will work on the sqlite3 version a bit more and finish it up. The PostgreSQL version will be way better than the sqlite3 version.
 
-3)  /Adelia2  i took adelia1 and had ai make even more fixes-- this is the most advanced version so far
+3)  /Adelia2  i took adelia1 and had ai make even more fixes-- this is the most advanced version so far- see the readme in the /Adelia2 directory
