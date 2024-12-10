@@ -9,7 +9,7 @@ All the imageboard apps here are at different stages of dev- but ALL of them are
 
 WHY do i mess with php a bit? Its a challenge to make somewhat secure and reliable apps from just about the worst lang out there, that's why. For all the peope who use php because it is "easy"- yeah, it may save you install steps by using php, but expanding your mind a bit and using go and rust might add 3 more install steps in setting up your server, but save about 20 steps in the future because go or rust has incredibly better security over php. There are no shortcuts in life. Easy to install php apps are not so easy to properly secure. 
 
-Make no mistake. Go and especially Rust are far superior to php. It seems like you are taking 2 steps forward with php because its easy to see an app in a browser... but in reality you are taking 10 steps back. If you started with go or rust you would start 10 steps ahead. You are not brilliant for trying to take the most easy shortcuts with php. It makes you feel brilliant, but that is a trap- a mind virus. 
+Make no mistake. Go and especially Rust are far superior to php. It seems like you are taking 2 steps forward with php because its easy to see an app in a browser... but in reality you are taking 10 steps back. If you started with go or rust you would start 10 steps ahead. You are not brilliant for trying to take the most easy shortcuts with php. It makes you feel brilliant, in control and powerful. Goooooood luck with that. 
 
 # Elite modern apps-
 
