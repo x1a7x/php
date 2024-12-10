@@ -21,4 +21,5 @@ SO-- if you want to mess with php, have some dam respect for the fact that you a
 
 2) /Adelia1 Pagination for main board added to /Adelia. This has to be the most features and security fit into a small tiny imageboard app, for real. This board is so nice and full featured that i will make a postgres version too in a while. I will work on the sqlite3 version a bit more and finish it up. The PostgreSQL version will be way better than the sqlite3 version.
 
-3)  /Adelia2  i took adelia1 and had ai make even more fixes-- this is the most advanced version so far- see the readme in the /Adelia2 directory
+3)  /Adelia2  i took adelia1 and had ai make even more fixes-- this is the most advanced version so far- see the readme in the /Adelia2 directory This is quite remarkable and so far the best imageboard ive ever seen that has the smallest code base. 2 small php files and 1 css file basically give you the functionality of something like vichan. This is a superior codebase for sure- modern, easy to change anything. NOT having a front facing admin area is more secure- just have ai make you a .sh file to do admin functions or a seperate php script with admin features- it is incredibly easy. Also there are sqlite db editors where you can directly edit any post, which is its own form of admin area. 
+   
