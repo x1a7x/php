@@ -15,7 +15,7 @@
 
 5) /Adelia4  top left has choice of 8 stylesheets- this board now has ALL the features that are standard on vichan lynxchan and so forth.
 
-6)  /Adelia5  to install run install.php. sets makes db and sets up WAL mode. 
+6)  /Adelia5  to install run install.php. makes db and sets up WAL mode. 
    
 
 
