@@ -18,6 +18,11 @@
 
 
 ..........................................................................................................................................................................
+
+
+
+
+# PHP is hard to like 
 I don't f/w php much due to its many vulnerabilities- its an uphill battle. Most new users know of 1 or 2 vulns, there are way more. In fact, at runtime unexpeted behavior happens that ai or pro devs do not predict or find. Php is what it is. So to mitigate some probs, make your codebase small for sure. Complexity = vulns in php and that is a fact. Moreover, when people run old versions of code on different versions of php versions installed on servers, this only serves to muddy the waters and make php more dangerous. In short- people need to wise up. The only way to make php safer for all is to only use the very latest version pf php on the server  AND only run the code MADE for the latest version of php servers. More hidden run time vulns and probs would be found by all. The way it is now, just running any php code on different versions of php servers is utterly stupid. Take the variables out of the problem areas! 
 
 It is ironic that php is so old, yet needs so much work to make it safer and more reliable. Let that sink in. 
