@@ -7,4 +7,4 @@ This is the only repo i put php in. But the apps will be small, and somewhat sec
 
 # apps
 
-1) Adelia quite a remarkable imageboard for its super small code base. Upload the 3 tiny files to a server with php 8.4.1 and sqlite3 installed. Supports trip codes, replies, jpg, gif, png, webp and mp4. Its just hard coded to show the very last reply on the main board under the orifinal post, but in reply mode all the replies show up. Css easily changed. A must see app. 
+1) /Adelia quite a remarkable imageboard for its super small code base. Upload the 3 tiny files to a server with php 8.4.1 and sqlite3 installed. Supports trip codes, replies, jpg, gif, png, webp and mp4. Its just hard coded to show the very last reply on the main board under the orifinal post, but in reply mode all the replies show up. Css easily changed. A must see app. 
