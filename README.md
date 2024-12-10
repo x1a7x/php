@@ -3,7 +3,7 @@
 
 I don't f/w php much due to its many vulnerabilities- its an uphill battle. Most new users know of 1 or 2 vulns, there are way more. In fact, at runtime unexpeted behavior happens that ai or pro devs do not predict or find. Php is what it is. So to mitigate some probs, make your codebase small for sure. Complexity = vulns in php and that is a fact. 
 
-This is the only repo i put php in. But the apps will be small, and somewhat secure. The apps will try to be useful. 
+All the imageboard apps here are at different stages of dev- but ALL of them are security focused and modern. Grab any version and do whatever you want with the code. Advanced Ai made all the apps here. Some are amazingly nice starting points for your own visions/changes. 
 
 # Elite modern apps-
 
