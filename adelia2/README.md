@@ -2,6 +2,15 @@
 
 
 
+
+![Screenshot 2024-12-10 091839](https://github.com/user-attachments/assets/4693e2d1-22b0-42b8-bf2f-bac51ddd5463)
+
+
+
+
+
+
+
 Simple Imageboard
 A minimalist imageboard application designed to run on PHP 8.4.1 and above, using SQLite for storage. This application provides a basic, yet functional imageboard with a focus on simplicity and robust security measures.
 
