@@ -1,4 +1,4 @@
-# php 8.4.1+ ONLY. No earlier versions of php should be used to run php code on servers. AND all php code should be up to at least php 8.4.1 standards. Period! 
+# php 8.4.1+ modern imageboards ! 
 
 
 # Elite modern apps-
