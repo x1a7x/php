@@ -3,9 +3,6 @@
 
 
 
-![Screenshot 2024-12-10 091839](https://github.com/user-attachments/assets/4693e2d1-22b0-42b8-bf2f-bac51ddd5463)
-
-
 
 
 
