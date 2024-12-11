@@ -17,7 +17,7 @@
 
 6)  /Adelia5  to install run install.php. makes db and sets up WAL mode. 
    
-## thats it. You how have an extremely small codebase in php that has the features of vichan with its outdated hundreds of files in the codebase. That is my input to php, a dam good input too! I am going back to rust but will leave this up. Take any version of adelia and feed it to Ai and you can easily change anything- the looks, the db the functions, anything!! The good news is that Ai can handle any php code you need it to make. The bad news is php is laughable at best- get out of it and code in rust or go. 
+## thats it. You how have an extremely small codebase in php that has the features of vichan with its outdated hundreds of files in the codebase. That is my input to php, a dam good input too! I am going back to rust but will leave this up. Take any version of adelia and feed it to Ai and you can easily change anything- the looks, the db the functions, anything!! The good news is that Ai can handle any php code you need it to make. The bad news is php is laughable at best- get out of it and code in rust lang or go lang. 
 
 ..........................................................................................................................................................................
 
