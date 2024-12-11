@@ -4,7 +4,7 @@
 # Elite modern apps-
 
 
-  # Introducing Adelia versions- made with ai- the tiny codebase imageboard with the features that vichan has. First versions will be in sqlite3, more db options such as postgreSQL db will be made !! 
+  # Introducing Adelia versions- made with ai- the tiny codebase imageboard with the features that vichan has. 
 1) /Adelia quite a remarkable privacy focused imageboard for its super small code base. Upload the 3 tiny files to a server with php 8.4.1 and sqlite3 installed. Supports trip codes, replies, jpg, gif, png, webp and mp4. Its just hard coded to show the very last reply on the main board under the original post, but in reply mode all the replies show up. Css easily changed. logs any errors to error.txt  Security heavily implemented. A must see app. How to install? Upload it to a server and visit your site from a web browser. Bam. Installation is done. 
 
 2) /Adelia1 Pagination for main board added to /Adelia. This has to be the most features and security fit into a small tiny imageboard app, for real. This board is so nice and full featured that i will make a postgres version too in a while. I will work on the sqlite3 version a bit more and finish it up. The PostgreSQL version will be way better than the sqlite3 version.
