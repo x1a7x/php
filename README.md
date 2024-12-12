@@ -7,7 +7,7 @@
 
 PHP simple imageboards- all tested on [PHP 8.4.1+] Ultimate starter kit for modern, working boards. If something does not work, it is your server config. I tested all of the code here on php 8.4.1- all of it. This repo contains boards that i used to only dream of when i first got into coding. ALL of the code here is easy to feed to AI to change or audit or make more secure. (although security is a joke in php). 
 
-# If you run any php app in production, feed the code to Ai every so often to fix the vulns for you!! I would not advise running php that is too large of a codebase to fit into ai. Let Ai audit all php code- always and often !! 
+# If you run any php app in production, feed the code to Ai every so often to fix the vulns for you!! Do NOT run any php app that is too large of a codebase to fit into ai- EVER- do NOT do it. Let Ai audit all php code- always and often !! 
 
 
 
