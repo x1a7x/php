@@ -98,6 +98,8 @@ function render_header(string $title, string $page_type = 'index'): void {
 <meta charset="utf-8">
 <title><?php echo htmlspecialchars($title, ENT_QUOTES | ENT_SUBSTITUTE | ENT_HTML5); ?></title>
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+
+<!-- Default stylesheet enabled, alternates disabled -->
 <link rel="stylesheet" title="default" href="/css/style.css" type="text/css" media="screen">
 <link rel="stylesheet" title="style1" href="/css/1.css" type="text/css" media="screen" disabled="disabled">
 <link rel="stylesheet" title="style2" href="/css/2.css" type="text/css" media="screen" disabled="disabled">
@@ -106,12 +108,31 @@ function render_header(string $title, string $page_type = 'index'): void {
 <link rel="stylesheet" title="style5" href="/css/5.css" type="text/css" media="screen" disabled="disabled">
 <link rel="stylesheet" title="style6" href="/css/6.css" type="text/css" media="screen" disabled="disabled">
 <link rel="stylesheet" title="style7" href="/css/7.css" type="text/css" media="screen" disabled="disabled">
+
 <link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css">
 
-<!-- Define active_page and board_name for hide-form.js -->
 <script type="text/javascript">
     var active_page = "<?php echo $page_type; ?>";
     var board_name = "<?php echo $board_name_js; ?>";
+
+    function setActiveStyleSheet(title) {
+        var links = document.getElementsByTagName("link");
+        for (var i = 0; i < links.length; i++) {
+            var a = links[i];
+            if(a.getAttribute("rel") && a.getAttribute("rel").indexOf("stylesheet") != -1 && a.getAttribute("title")) {
+                a.disabled = true;
+                if(a.getAttribute("title") === title) a.disabled = false;
+            }
+        }
+        localStorage.setItem('selectedStyle', title);
+    }
+
+    window.addEventListener('load', function() {
+        var savedStyle = localStorage.getItem('selectedStyle');
+        if(savedStyle) {
+            setActiveStyleSheet(savedStyle);
+        }
+    });
 </script>
 
 <script type="text/javascript" src="/js/jquery.min.js"></script>
@@ -120,7 +141,14 @@ function render_header(string $title, string $page_type = 'index'): void {
 <script type="text/javascript" src="/js/hide-form.js"></script>
 </head>
 <body class="visitor is-not-moderator active-index" data-stylesheet="default">
-<div id="style-selector" style="position:absolute; top:10px; right:10px; background:#eee; padding:5px; border:1px solid #ccc;">
+<header><h1>/<?php echo $board_name_js; ?>/ - Random</h1><div class="subtitle"></div></header>
+    <?php
+}
+
+function render_footer(): void {
+    ?>
+<!-- Move style-selector to bottom-left of the page -->
+<div id="style-selector" style="position:fixed; bottom:10px; left:10px; background:#eee; padding:5px; border:1px solid #ccc;">
     <label for="style_select">Style:</label>
     <select id="style_select" onchange="setActiveStyleSheet(this.value)">
         <option value="default">default</option>
@@ -133,12 +161,7 @@ function render_header(string $title, string $page_type = 'index'): void {
         <option value="style7">style7</option>
     </select>
 </div>
-<header><h1>/<?php echo $board_name_js; ?>/ - Random</h1><div class="subtitle"></div></header>
-    <?php
-}
 
-function render_footer(): void {
-    ?>
 <footer>
     <p class="unimportant" style="margin-top:20px;text-align:center;">
         All trademarks, copyrights,
@@ -157,7 +180,6 @@ function render_board_index($db, $results = null): void {
     $csrf_token = get_global_csrf_token();
     render_header('/' . $GLOBALS['board_name'] . '/ - Random', 'index');
     ?>
-    <!-- The posting form is displayed plainly; hide-form.js will handle showing/hiding -->
     <form name="post" onsubmit="return true;" enctype="multipart/form-data" action="chess.php" method="post">
         <input type="hidden" name="csrf_token" value="<?php echo htmlspecialchars($csrf_token, ENT_QUOTES | ENT_SUBSTITUTE | ENT_HTML5); ?>">
         <table>
@@ -441,4 +463,3 @@ function render_image_html(?string $image): string {
     }
     return '';
 }
-
