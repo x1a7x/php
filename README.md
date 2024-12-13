@@ -1,6 +1,6 @@
 
 
-
+so far the best board on here is cat4
 
 
 # IMAGEBOARDS (PHP 8.4.1+) ( If you are looking for imageboard php code, today is your lucky day- this is the largest collection of working simple php 8.4.1+ imageboards on git!) 
