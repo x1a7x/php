@@ -1,4 +1,7 @@
 <?php
+
+// reply.php
+
 declare(strict_types=1);
 
 require_once __DIR__ . '/config.php';
@@ -43,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $bump_stmt->bindValue(2, $thread_id, SQLITE3_INTEGER);
     $bump_stmt->execute();
 
-    generate_static_index($db);
+    generate_all_index_pages($db);
     generate_static_thread($db, $thread_id);
 
     header("Location: threads/thread_{$thread_id}.html");

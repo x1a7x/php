@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 require_once __DIR__ . '/config.php';
@@ -34,18 +35,17 @@ $db->exec("CREATE TABLE IF NOT EXISTS posts (
     datetime TEXT
 )");
 
-// Enable WAL mode
 $db->exec("PRAGMA journal_mode = WAL;");
 $db->exec("PRAGMA foreign_keys = ON;");
 
-// Vacuum and analyze
+// Vacuum and analyze for performance
 $db->exec("VACUUM;");
 $db->exec("ANALYZE;");
 
-// Generate initial empty index.html
-ob_start();
-render_board_index($db, null);
-$html = ob_get_clean();
-file_put_contents(__DIR__ . '/index.html', $html, LOCK_EX);
+// Generate initial index page(s)
+generate_all_index_pages($db);
 
-echo "Installation completed successfully. You can now open chess.php or index.html in your browser.\n";
+echo "Installation completed successfully. You can now visit the board: <a href=\"index.html\">index.html</a>";
+
+// Attempt to delete install.php after installation for security
+@unlink(__FILE__);

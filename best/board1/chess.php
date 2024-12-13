@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 require_once __DIR__ . '/config.php';
@@ -14,6 +15,8 @@ ini_set('error_log', __DIR__ . '/error.log');
 verify_csrf_token();
 
 $db = init_db();
+
+$page = isset($_GET['page']) ? max(1, (int)$_GET['page']) : 1;
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['post'])) {
     $name = sanitize_input($_POST['name'] ?? '');
@@ -33,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['post'])) {
             $filename = time() . '_' . random_int(1000,9999) . '.' . $ext;
             $target = $upload_dir . $filename;
             if (move_uploaded_file($_FILES['file']['tmp_name'], $target)) {
-                // MIME checked at render time
+                // Image/video MIME check done at render time
                 $image_path = $filename;
             }
         }
@@ -47,16 +50,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['post'])) {
     $stmt->bindValue(5, $datetime, SQLITE3_TEXT);
     $stmt->execute();
 
-    generate_static_index($db);
     $thread_id = (int)$db->lastInsertRowID();
+
+    // Regenerate all index pages and the new thread
+    generate_all_index_pages($db);
     generate_static_thread($db, $thread_id);
 
     header("Location: index.html");
     exit;
 }
 
+// If no index.html exists yet, create it
 if (!file_exists(__DIR__ . '/index.html')) {
-    generate_static_index($db);
+    generate_all_index_pages($db);
 }
-header("Location: index.html");
+
+if ($page === 1) {
+    header("Location: index.html");
+} else {
+    header("Location: index_{$page}.html");
+}
 exit;
